@@ -15,7 +15,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Recipe App </title>
+    <title>Disk Schedulling Algorithms</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
@@ -51,7 +51,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text-container">
-                            <h1>Recipes that are <span id="js-rotating">Vegan, Paleo, Healthy</span></h1>
+                            <h1>Disk Schedulling Algorithms</h1>
                         </div>
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
@@ -73,8 +73,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>About </h2>
-                    <div class="p-heading p-large">Personal project where I combine multiple lessons <br>
-                    I will try to build more features in the future to improve my skills and broaden my experience </div>
+                    <div class="p-heading p-large">Done by operating systems to schedule I/O requests arriving for the disk. Disk scheduling is also known as I/O scheduling. I will try to build more features in the future to improve my skills and broaden my experience.</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -94,8 +93,7 @@
                                         <div class="card-body">
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">Challenge</h4>
-                                                <p>Find a public API that you can use in you app and learn about data injection and Gson.
-                                                </p>
+                                                <p>Find a way to implement all six algorithms to make a user-friendly menu for everybody to use.</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa-compass"></i>
@@ -120,7 +118,7 @@
 
                                 <!-- Image Panel -->
                                 <div class="col-lg-4">
-                                    <img class="img-fluid" src="/RecipeApp/images/small/list2.png" alt="alternative">
+                                    <img class="img-fluid" src="/RecipeApp/images/dices.png" alt="alternative">
                                 </div>
                                 <!-- end of image pane -->
                                 
@@ -136,8 +134,7 @@
                                             </div>
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">Technologies</h4>
-                                                <p>Retrofit, GSON library and SQLite to store data locally so you don't use all your API points and have to pay.
-                                                </p>
+                                                <p>C programming language</p>
                                             </div>
                                         </div>
                                     </div>
@@ -180,11 +177,11 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h3>Browse hundreds of recipes</h3>
-                        <p>The Spoonacular API offers a large set of data and many end points to search for
-                            <br> I highly recommend checking it out!
+                        <h3>FCFS SSTF SCAN</h3>
+                        <p>FCFS: the simplest of all the Disk Scheduling Algorithms. In FCFS, the requests are addressed in the order they arrive in the disk queue.Let us understand this with the help of an example. <br>
+                           <br> SSTF: requests having shortest seek time are executed first So, the seek time of every request is calculated in advance and then they are scheduled according to their calculated seek time. As a result, the request near the disk arm will get executed first
+                            <br> <br>SCAN algorithm the disk arm moves into a particular direction and services the requests coming in its path and after reaching the end of disk, it reverses its direction and again services the request arriving in its path.
                         </p>
-                        <a class="btn-solid-lg" href="https://spoonacular.com/food-apit" target="_blank">Spoonacular API</a>
                         <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">Try the Game</a> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -199,9 +196,11 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text-container">
-                            <h3>Popular recipes</h3>
-                            <p>Recipes have a 'like' counter that make a recipe more likely to be tried by a user. It is all provided by the API.</p>
-                        </div> <!-- end of text-container -->
+                            <h3>CSAN LOOK CLOOK</h3>
+                            <p>CSCAN: the disk arm instead of reversing its direction goes to the other end of the disk and starts servicing the requests from there. So, the disk arm moves in a circular fashion and this algorithm is also similar to SCAN algorithm and hence it is known as C-SCAN
+                           <br>   <br>  LOOK: It is similar to the SCAN except for the difference that the disk arm in spite of going to the end of the disk goes only to the last request to be serviced in front of the head and then reverses its direction from there only.
+                             <br> <br>   CLOOK: the disk arm in spite of going to the end goes only to the last request to be serviced in front of the head and then from there goes to the other end’s last request
+                            </p> </div> <!-- end of text-container -->
                        
                     </div> <!-- end of col -->
                     <div class="col-lg-6">
@@ -212,125 +211,14 @@
         </div> <!-- end of second -->
     </div> <!-- end of basic-3 -->    
     <!-- end of details 2 -->
-
-
-    <!-- Screenshots -->
-    <div class="slider-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Image Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container image-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/details.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/small/details.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/ingredients.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/small/ingredients.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/list1.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/small/list1.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/web.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/small/web.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/list2.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/small/list2.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/details.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/small/details.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/ingredients.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/small/ingredients.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/list1.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/big/list1.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/web.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/small/web.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="/RecipeApp/images/big/list2.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="/RecipeApp/images/small/list2.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-                                
-                            </div> <!-- end of swiper-wrapper -->
-
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of image slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-2 -->
-    <!-- end of screenshots -->
-
-
     <!-- Download -->
     <div class="basic-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
-                        <h2>Watch The Trailer<span class="blue"> and Demo</span></h2>
-                        <a class="btn-solid-lg" href="https://github.com/darco918/Food-Recipe-App" target="_blank"><i class="fab fa-github"></i>Check it out on Github</a>
+                        <h2>Find the repository at</h2>
+                        <a class="btn-solid-lg" href="https://github.com/Tugu19/Synchronous-Disk-Scheduling" target="_blank"><i class="fab fa-github"></i>Check it out on Github</a>
                       
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
